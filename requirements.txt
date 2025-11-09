@@ -1,0 +1,6 @@
+numpy
+torch
+tqdm
+vllm
+huggingface_hub
+notebook

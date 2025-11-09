@@ -1,0 +1,11 @@
+*.zip
+*.idea
+*.vscode
+*.DS_Store
+*.ipynb_checkpoints
+*.pyc
+*.pdf
+*__pycache__
+
+results/
+datasets/
