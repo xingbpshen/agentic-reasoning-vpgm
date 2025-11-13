@@ -1,5 +1,5 @@
 <h1 align="center">
-Verbalized Probabilistic Graphical Modeling
+BayesAgent: Bayesian Agentic Reasoning Under Uncertainty via Verbalized Probabilistic Graphical Modeling
 </h1>
 
 <p align="center">
@@ -10,7 +10,7 @@ Verbalized Probabilistic Graphical Modeling
 </p>
 
 This repository contains the official implementation of the paper:
-> __Verbalized Probabilistic Graphical Modeling__  
+> __BayesAgent: Bayesian Agentic Reasoning Under Uncertainty via Verbalized Probabilistic Graphical Modeling__  
 > [Hengguan Huang*](https://scholar.google.com/citations?hl=en&user=GQm1eZEAAAAJ), [Xing Shen*](https://scholar.google.com/citations?hl=en&user=U69NqfQAAAAJ), Guang-Yuan Hao, Songtao Wang, Lingfa Meng, Dianbo Liu, David Alejandro Duchene, Hao Wang, Samir Bhatt  
 > _*Equal contribution_  
 > _AAAI Conference on Artificial Intelligence, 2026_  
@@ -47,6 +47,7 @@ bash auto_run.sh
 The inference results file will be saved in the specified path `results/` under the project root.
 
 ## Acknowledgments
+S.B. acknowledges funding from the MRC Centre for Global Infectious Disease Analysis (reference MR/X020258/1), funded by the UK Medical Research Council (MRC). This UK funded award is carried out in the frame of the Global Health EDCTP3 Joint Undertaking. S.B. is funded by the National Institute for Health and Care Research (NIHR) Health Protection Research Unit in Modelling and Health Economics, a partnership between UK Health Security Agency, Imperial College London and LSHTM (grant code NIHR200908). Disclaimer: “The views expressed are those of the author(s) and not necessarily those of the NIHR, UK Health Security Agency or the Department of Health and Social Care.”. S.B. acknowledges support from the Novo Nordisk Foundation via The Novo Nordisk Young Investigator Award (NNF20OC0059309). SB acknowledges the Danish National Research Foundation (DNRF160) through the chair grant. S.B. acknowledges support from The Eric and Wendy Schmidt Fund For Strategic Innovation via the Schmidt Polymath Award (G-22-63345) which also supports H.H. and L.M.
 
 ## Citation
 
