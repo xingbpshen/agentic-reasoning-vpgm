@@ -21,8 +21,8 @@ The technical appendix can be found at [here](./assets/appendix.pdf).
 
 ## Overview
 In this work, we explore for the first time how to bridge LLM agents with probabilistic graphical models (PGMs) to address agentic reasoning under uncertainty. To this end, we introduce Verbalized Probabilistic Graphical Modeling (vPGM), a Bayesian agentic framework that (i) guides LLM agents in following key principles of PGMs through natural language and (ii) refines the resulting posterior distributions via numerical Bayesian inference. Unlike many traditional probabilistic methods requiring substantial domain expertise, vPGM bypasses expert‐driven model design, making it well‐suited for scenarios with limited assumptions.
-<p align="center">
-  <img src="./assets/fig.png" alt="fig" width="75%"/>
+<p align="center" style="line-height:0;">
+  <img src="./assets/fig.png" alt="fig" width="75%">
 </p>
 
 ## 1. Preparation
