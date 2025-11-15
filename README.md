@@ -11,7 +11,7 @@ BayesAgent: Bayesian Agentic Reasoning Under Uncertainty via Verbalized Probabil
 
 This repository contains the official implementation of the paper:
 > __BayesAgent: Bayesian Agentic Reasoning Under Uncertainty via Verbalized Probabilistic Graphical Modeling__  
-> [Hengguan Huang*](https://scholar.google.com/citations?hl=en&user=GQm1eZEAAAAJ), [Xing Shen*](https://scholar.google.com/citations?hl=en&user=U69NqfQAAAAJ), Guang-Yuan Hao, Songtao Wang, Lingfa Meng, Dianbo Liu, David Alejandro Duchene, Hao Wang, Samir Bhatt  
+> [Hengguan Huang*](https://sites.google.com/view/huanghengguan?usp=sharing), [Xing Shen*](https://xingbpshen.github.io), Guang-Yuan Hao, Songtao Wang, Lingfa Meng, Dianbo Liu, David Alejandro Duchene, [Hao Wang](http://www.wanghao.in), [Samir Bhatt](https://scholar.google.com/citations?user=tL0x_vUAAAAJ&hl=en)  
 > _*Equal contribution_  
 > _AAAI Conference on Artificial Intelligence, 2026_  
 > __Paper ([arXiv preprint](https://arxiv.org/abs/2406.05516))__
@@ -46,7 +46,21 @@ datasets/
 ```
 This dataset is a subset, and a processed (all tools' responses are included) version of the original [ScienceQA](https://github.com/lupantech/ScienceQA) dataset. For convenience, we provide a [Google Drive link](https://drive.google.com/drive/folders/1OFah-mLXufy8XbUq6B5_JNepeS_S_Yy-?usp=sharing) to download the processed dataset used in our experiments, note that the dataset is under CC BY-NC-SA 4.0 license.
 
+### 1.3 Preparing the Large Language Model (LLM)
+We recommend to download the open-source LLMs using huggingface-cli 🤗 (make sure you obtained relevant permissions/agreement to download the models from Hugging Face):
+```bash
+huggingface-cli login
+huggingface-cli download {REPO_NAME} --local-dir {SAVE_FOLDER} --local-dir-use-symlinks False
+```
+For example, the `{REPO_NAME}` can be `meta-llama/Meta-Llama-3-8B-Instruct` and `{SAVE_FOLDER}` can be `/usr/local/data/Meta-Llama-3-8B-Instruct`. The downloaded model will be saved in the specified folder `{SAVE_FOLDER}`.
+
 ## 2. Running Inference
+### 2.1 Modifying Arguments in `auto_run.sh`
+Please modify the following arguments in `auto_run.sh` before running the script:
+- `--llm_name`: the name of the LLM used, e.g., `Meta-Llama-3-8B-Instruct`.
+- `--model_path`: the path to the downloaded LLM.
+- `--xdg_cache_home`: the path to the cache directory.
+### 2.2 Running the Script
 Please run the following command to run inference:
 ```bash
 bash auto_run.sh
