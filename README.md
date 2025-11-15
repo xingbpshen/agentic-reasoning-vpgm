@@ -47,7 +47,7 @@ datasets/
 This dataset is a subset, and a processed (all tools' responses are included) version of the original [ScienceQA](https://github.com/lupantech/ScienceQA) dataset. For convenience, we provide a [Google Drive link](https://drive.google.com/drive/folders/1OFah-mLXufy8XbUq6B5_JNepeS_S_Yy-?usp=sharing) to download the processed dataset used in our experiments, note that the dataset is under CC BY-NC-SA 4.0 license.
 
 ### 1.3 Preparing the Large Language Model (LLM)
-We recommend to download the open-source LLMs using huggingface-cli 🤗 (make sure you obtained relevant permissions/agreement to download the models from Hugging Face):
+We recommend to download the open-source LLMs using `huggingface-cli` 🤗 (make sure you obtained relevant permissions/agreement to download the models from Hugging Face):
 ```bash
 huggingface-cli login
 huggingface-cli download {REPO_NAME} --local-dir {SAVE_FOLDER} --local-dir-use-symlinks False
