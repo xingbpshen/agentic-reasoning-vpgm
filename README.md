@@ -18,6 +18,10 @@ This repository contains the official implementation of the paper:
 
 
 ## Overview
+In this work, we explore for the first time how to bridge LLM agents with probabilistic graphical models (PGMs) to address agentic reasoning under uncertainty. To this end, we introduce Verbalized Probabilistic Graphical Modeling (vPGM), a Bayesian agentic framework that (i) guides LLM agents in following key principles of PGMs through natural language and (ii) refines the resulting posterior distributions via numerical Bayesian inference. Unlike many traditional probabilistic methods requiring substantial domain expertise, vPGM bypasses expert‐driven model design, making it well‐suited for scenarios with limited assumptions.
+<p align="center">
+  <img src="./assets/fig.png" alt="fig" width="75%"/>
+</p>
 
 ## 1. Preparation
 
@@ -35,9 +39,10 @@ The downloaded dataset should be structured in the following format, the `datase
 datasets/
 └── my_scienceqa/
     ├── val_1005.json
-    └── test_2563.json
+    ├── test_2563.json
+    └── DATASET_LICENSE
 ```
-This dataset is a subset, and a processed (all tools' responses are included) version of the original [ScienceQA](https://github.com/lupantech/ScienceQA) dataset. For convenience, we provide a Google Drive Link (coming soon) to download the processed dataset used in our experiments, note that the dataset is under CC BY-NC-SA 4.0 license.
+This dataset is a subset, and a processed (all tools' responses are included) version of the original [ScienceQA](https://github.com/lupantech/ScienceQA) dataset. For convenience, we provide a [Google Drive link](https://drive.google.com/drive/folders/1OFah-mLXufy8XbUq6B5_JNepeS_S_Yy-?usp=sharing) to download the processed dataset used in our experiments, note that the dataset is under CC BY-NC-SA 4.0 license.
 
 ## 2. Running Inference
 Please run the following command to run inference:
@@ -47,9 +52,9 @@ bash auto_run.sh
 The inference results file will be saved in the specified path `results/` under the project root.
 
 ## Acknowledgments
-S.B. acknowledges funding from the MRC Centre for Global Infectious Disease Analysis (reference MR/X020258/1), funded by the UK Medical Research Council (MRC). This UK funded award is carried out in the frame of the Global Health EDCTP3 Joint Undertaking. S.B. is funded by the National Institute for Health and Care Research (NIHR) Health Protection Research Unit in Modelling and Health Economics, a partnership between UK Health Security Agency, Imperial College London and LSHTM (grant code NIHR200908). Disclaimer: “The views expressed are those of the author(s) and not necessarily those of the NIHR, UK Health Security Agency or the Department of Health and Social Care.”. S.B. acknowledges support from the Novo Nordisk Foundation via The Novo Nordisk Young Investigator Award (NNF20OC0059309). SB acknowledges the Danish National Research Foundation (DNRF160) through the chair grant. S.B. acknowledges support from The Eric and Wendy Schmidt Fund For Strategic Innovation via the Schmidt Polymath Award (G-22-63345) which also supports H.H. and L.M.
+S.B. acknowledges funding from the MRC Centre for Global Infectious Disease Analysis (reference MR/X020258/1), funded by the UK Medical Research Council (MRC). This UK funded award is carried out in the frame of the Global Health EDCTP3 Joint Undertaking. S.B. is funded by the National Institute for Health and Care Research (NIHR) Health Protection Research Unit in Modelling and Health Economics, a partnership between UK Health Security Agency, Imperial College London and LSHTM (grant code NIHR200908). H.W. is partially supported by Amazon Faculty Research Award, Microsoft AI & Society Fellowship, NSF CAREER Award IIS-2340125, NIH grant R01CA297832, and NSF grant IIS-2127918. We acknowledge support from OpenAI’s Researcher Access Program. Disclaimer: "The views expressed are those of the author(s) and not necessarily those of the NIHR, UK Health Security Agency or the Department of Health and Social Care." S.B. acknowledges support from the Novo Nordisk Foundation via The Novo Nordisk Young Investigator Award (NNF20OC0059309). S.B. acknowledges the Danish National Research Foundation (DNRF160) through the chair grant. S.B. acknowledges support from The Eric and Wendy Schmidt Fund For Strategic Innovation via the Schmidt Polymath Award (G-22-63345) which also supports H.H. and L.M.
 
-## Citation
+[//]: # (## Citation)
 
 ## Contact
 Please raise a GitHub issue or email us at <a href="mailto:xing.shen@mail.mcgill.ca">xing.shen@mail.mcgill.ca</a> (with the email subject starting with "[vPGM]") if you have any question or encounter any issue.
