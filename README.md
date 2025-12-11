@@ -13,7 +13,7 @@ This repository contains the official implementation of the paper:
 > __BayesAgent: Bayesian Agentic Reasoning Under Uncertainty via Verbalized Probabilistic Graphical Modeling__  
 > [Hengguan Huang*](https://sites.google.com/view/huanghengguan?usp=sharing), [Xing Shen*](https://xingbpshen.github.io), Guang-Yuan Hao, Songtao Wang, Lingfa Meng, Dianbo Liu, David Alejandro Duchene, [Hao Wang](http://www.wanghao.in), [Samir Bhatt](https://scholar.google.com/citations?user=tL0x_vUAAAAJ&hl=en)  
 > _*Equal contribution_  
-> _AAAI Conference on Artificial Intelligence, 2026_  
+> _AAAI Conference on Artificial Intelligence_, 2026  
 > __Paper ([arXiv preprint](https://arxiv.org/abs/2406.05516))__
 
 The technical appendix can be found at [here](./assets/appendix.pdf).
